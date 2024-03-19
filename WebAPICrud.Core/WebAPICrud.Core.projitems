@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>94da2f2e-7b33-4101-ab9e-42455625b3de</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>WebAPICrud.Core</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)BL\Interfaces\ICatalogo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BL\Services\CatalogoService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BL\Services\SeguridadService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ContextConfiguration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\WebApiContext.cs" />
+  </ItemGroup>
+</Project>
